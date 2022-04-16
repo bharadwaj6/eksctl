@@ -5,7 +5,7 @@ kind: ClusterConfig
 
 metadata:
   name: cluster-9
-  region: eu-west-1
+  region: ap-south-1
 
 vpc:
   nat:
@@ -13,6 +13,6 @@ vpc:
 
 nodeGroups:
   - name: ng-1
-    instanceType: m5.xlarge
+    instanceType: t3.micro
     desiredCapacity: 2
     privateNetworking: true # if only 'Private' subnets are given, this must be enabled
